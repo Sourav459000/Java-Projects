@@ -23,61 +23,49 @@ public class App extends JFrame implements ActionListener, KeyListener {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
-        // Initialize default group
         groupsMap.put("Default", new ArrayList<>());
 
-        // Groups ComboBox
         groupsComboBox = new JComboBox<>();
         groupsComboBox.addActionListener(this);
         add(groupsComboBox, BorderLayout.NORTH);
 
-        // Task Area
         taskArea = new JTextArea();
         taskArea.setEditable(false);
         JScrollPane scrollPane = new JScrollPane(taskArea);
         add(scrollPane, BorderLayout.CENTER);
 
-        // Input Panel
         JPanel inputPanel = new JPanel();
         inputPanel.setLayout(new BorderLayout());
         inputPanel.setBackground(Color.LIGHT_GRAY);
 
-        // Task Field
         taskField = new JTextField();
         taskField.addKeyListener(this);
         inputPanel.add(taskField, BorderLayout.CENTER);
 
-        // Buttons
         JPanel buttonPanel = new JPanel();
         buttonPanel.setLayout(new GridLayout(2, 3, 10, 10));
         buttonPanel.setBackground(Color.LIGHT_GRAY);
 
-        // Add Group Button
         addGroupButton = new JButton("Add Group");
         addGroupButton.addActionListener(this);
         buttonPanel.add(addGroupButton);
 
-        // Update Group Button
         updateGroupButton = new JButton("Update Group");
         updateGroupButton.addActionListener(this);
         buttonPanel.add(updateGroupButton);
 
-        // Delete Group Button
         deleteGroupButton = new JButton("Delete Group");
         deleteGroupButton.addActionListener(this);
         buttonPanel.add(deleteGroupButton);
 
-        // Add Task Button
         addButton = new JButton("Add Task");
         addButton.addActionListener(this);
         buttonPanel.add(addButton);
 
-        // Delete Task Button
         deleteButton = new JButton("Delete Task");
         deleteButton.addActionListener(this);
         buttonPanel.add(deleteButton);
 
-        // Update Task Button
         updateButton = new JButton("Update Task");
         updateButton.addActionListener(this);
         buttonPanel.add(updateButton);
@@ -85,7 +73,6 @@ public class App extends JFrame implements ActionListener, KeyListener {
         inputPanel.add(buttonPanel, BorderLayout.SOUTH);
         add(inputPanel, BorderLayout.SOUTH);
 
-        // Load previously saved data
         loadData();
 
         setVisible(true);
