@@ -1,20 +1,22 @@
 # Library Management System
 
-A simple graphical Library Management System created using Java Swing. This application provides functionalities to manage books in a library, including adding books, issuing books, and returning books.
+A comprehensive Library Management System created using Java Swing. This application allows for efficient management of books in a library, including adding, issuing, returning, viewing, and deleting books.
 
 ## Features
 
-- **Add Books**: Add new books to the library with title and author details.
-- **Issue Books**: Issue a book to a user by title.
-- **Return Books**: Return an issued book by title.
-- **View Books**: Display all books in the library along with their status (available or issued).
+- **Add Books**: Add new books to the library with details such as title, author, genre, and quantity.
+- **Issue Books**: Issue books to users by specifying the title and optional author details, along with the issued by and expected return date.
+- **Return Books**: Return issued books by specifying the title and the quantity being returned.
+- **View Books**: Display all books in the library in a tabular form with details like title, author, genre, quantity, issued status, issued by, issued date, and expected return date.
+- **Delete Books**: Remove books from the library by specifying the title.
+- **Persistent Storage**: Save the state of the library, including all book details, so that data is retained between application restarts.
 - **Stylish Interface**: A bright and user-friendly interface with vibrant colors and clear fonts.
 
 ## Getting Started
 
 ### Prerequisites
 
-- **Java Development Kit (JDK)**: Make sure you have JDK 8 or later installed on your machine.
+- **Java Development Kit (JDK)**: Ensure you have JDK 8 or later installed on your machine.
 
 ### Installation
 
@@ -40,10 +42,11 @@ A simple graphical Library Management System created using Java Swing. This appl
 
 ## Usage
 
-1. **Add Books**: Enter the title and author in the respective fields and click the "Add Book" button.
-2. **Issue Books**: Click the "Issue Book" button and enter the title of the book to be issued.
-3. **Return Books**: Click the "Return Book" button and enter the title of the book to be returned.
-4. **View Books**: Click the "View Books" button to display the list of all books along with their status.
+1. **Add Books**: Enter the title, author, genre, and quantity in the respective fields and click the "Add Book" button.
+2. **Issue Books**: Enter the title, issued by, issue quantity, and expected return date in the respective fields and click the "Issue Book" button.
+3. **Return Books**: Enter the title and return quantity in the respective fields and click the "Return Book" button.
+4. **View Books**: Click the "View Books" button to display the list of all books in a tabular form.
+5. **Delete Books**: Enter the title of the book to be deleted in the respective field and click the "Delete Book" button.
 
 ## Contributing
 
@@ -53,8 +56,9 @@ If you would like to contribute to this project, please fork the repository and 
 
 Copyright (c) 2024 Sourav Toshniwal
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THESOFTWARE.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
